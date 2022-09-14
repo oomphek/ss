@@ -10,7 +10,32 @@
 			margin: 0 %;
 			font-family: sans-serif;
 			font-style: italic;
+
 		}
+		@media screen and (max-width: 900px) {
+			body {
+				display: flex;
+				flex-direction: column;
+			}
+			#top {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				width: 50%;
+			}
+			#mebel div {
+				display: flex;
+				flex: 1 1 50%;
+				flex-direction: column;
+				width: 100%;
+			}
+		}
+    
+
+			
+
+		
+
 		ul li {
 			list-style: none;
 		}
@@ -23,7 +48,9 @@
 			
 		}
 		#top .topp .toppp {
+
 display: flex;
+flex: 1 1 50%;
 flex-direction: row;
 justify-content: space-around;
 align-items: center;
