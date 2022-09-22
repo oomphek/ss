@@ -4,29 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>dostavka</title>
-	<style>
-		body {
-			background-color: black;
-			text-align: center;
-			margin: 5%;
-			color: #e5f461;
-		}
-		input {
-			background-color: #f9be5e;
-		}
-#form {
-	display: flex;
-	flex-direction: column;
-	flex-flow: 10px;
-}
-div { margin-top: 2em;
-}
-h1 { font-size: 2em;
-	font-family: monospace;
-	color: #e5f461;
-}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/dostavka.css">
+	
 
 
 </head>
@@ -42,7 +21,13 @@ h1 { font-size: 2em;
 	Фамилия <input type="sername" name="sername" value="">
 </div>
 <div>Номер телефона<input placeholder="" type="tel" name="tel" value=""></div>
-<div>Адрес<input type="adress" name="adress" value=""></div>
+<div>Адрес<textarea></textarea></div>
+<div>Ожидаемое время доставки<input type="text" name="text"></div>
+<div>Расчёт<select>
+	<option>Безналичный расчёт</option>
+	<option>Наличный расчёт</option>
+</select></div>
+<div><input class="button" type="submit" name="Отправить" value="ОК"><input type="reset" name="reset" value="Сбросить" class="button"></div>
 </section>
 </form>
 </body>
