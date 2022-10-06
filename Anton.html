@@ -11,7 +11,21 @@
 			font-family: sans-serif;
 			font-style: italic;
 
+
+
 		}
+        @media screen and (max-width: 1300px) {
+        	#main {
+        		
+        	}
+        	#two {
+
+        	}
+        	#mebel {
+
+        	}
+        }
+
 		@media screen and (max-width: 900px) {
 			body {
 				display: flex;
@@ -21,11 +35,11 @@
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
-				width: 50%;
+				width: 100%;
 			}
 			#mebel div {
 				display: flex;
-				flex: 1 1 50%;
+				flex: 1 1 100%;
 				flex-direction: column;
 				width:;
 				margin: 0 auto;
@@ -59,6 +73,7 @@ flex-wrap: wrap;
 			background-color: black;
 			height: 3em;
 			margin-top: -0.5em;
+
 		
 
 
@@ -138,6 +153,13 @@ flex-wrap: wrap;
 	flex-wrap: wrap;
 
 }
+#two {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 5%;
+	flex-wrap: wrap;
+}
+
 #price {
 	line-height: 50px;
 	display: flex;
@@ -223,6 +245,7 @@ background-color: #3DC650;
 	display: flex;
 	justify-content: space-around;
 	margin: 3em 5% 0 5%;
+	flex-wrap: wrap;
 
 }
 .rett {
@@ -234,6 +257,8 @@ background-color: #3DC650;
 #mebel {
 	margin-top: 3em;
 	background-color: black;
+
+
 }
 .divan {
 	color: white;
@@ -305,6 +330,24 @@ top: 20px;
 	position: relative;
 }
 
+@keyframes booty {
+	0% {color: white;}
+	50% {color: pink}
+	100% {color: gray;}
+}
+.price {
+	animation-name: booty;
+	animation-duration: 12s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+	.menu {
+		
+	}
+}
+
 
 	</style>
 
@@ -360,37 +403,34 @@ top: 20px;
 </section>
 <h2>Шкафы-купе</h2>
 <section id="main">
-	<div><img src="imgA/6d-2-500x500.jpg" alt="shkaf" class="shkaf"></div>
-	<div><img src="imgA/es17_1-500x500.jpg" alt="shkaf" class="shkaf"></div>
-	<div><img src="imgA/images (1).jpg" alt="shkaf" class="shkaf"></div>
-	<div><img src="imgA/images.jpg" alt="shkaf" class="shkaf"></div>
-</section>
-<section id="price"><div class="price">Белый дракон</div>
-	<div class="price">Плитка</div>
-	<div class="price">Золотой дракон</div>
-	<div class="priceT">Элитный</div></section>
+	<div><img src="imgA/6d-2-500x500.jpg" alt="shkaf" class="shkaf">
+<div class="price">Белый дракон</div>
+<div class="req">45 000₴</div>
+<div class="rett">35 000₴</div>
+<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
+	</div>
+	<div><img src="imgA/es17_1-500x500.jpg" alt="shkaf" class="shkaf">
+<div class="price">Плитка</div>
+<div class="req">32 000₴</div>
+<div class="rett">24 999₴</div>
+<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
 
-	<section id="req">
-		<div class="req">45 000₴</div>
-		<div class="req">32 000₴</div>
-		<div class="req">27 000₴</div>
-		<div class="req">30 000₴</div>
-	</section>
-	<section id="ret">
-		<div class="ret">29 999₴</div>
-		<div class="ret">24 999₴</div>
-		<div class="ret">19 999₴</div>
-		<div class="ret">22 999₴</div>
-	</section>
-	<section id="pic">
-		<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
-		<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
-		<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
-		<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
-	</section>
+	</div>
+	<div><img src="imgA/images (1).jpg" alt="shkaf" class="shkaf">
+<div class="price">Золотой дракон</div>
+<div class="req">27 000₴</div>
+<div class="rett">19 999₴</div>
+<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
+	</div>
+	<div><img src="imgA/images.jpg" alt="shkaf" class="shkaf">
+<div class="price">Элитный</div>
+<div class="req">30 000₴</div>
+<div class="rett">22 999₴</div>
+<div class="pic"><button><img src="imgA/Без_названия-removebg-preview.png" alt="kor" width="50" height="50">В Корзину</button></div>
+	</div>
+</section>
 	<section id="two">
-		<div class="pric">
-			<div><img src="imgA/images (4).jpg" alt="shkaf" class="shkaf">
+		<div><img src="imgA/images (4).jpg" alt="shkaf" class="shkaf">
 				<div class="price">
 					Дерево
 				</div>
